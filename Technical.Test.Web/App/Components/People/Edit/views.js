@@ -3,6 +3,9 @@ TechnicalTest.module('People.Common', function (Common, App, Backbone, Marionett
 
     Common.PersonView = Marionette.ItemView.extend({
         template: 'components/people/edit/templates/person',
+        ui: {
+            form:'form'
+        },
         triggers: {
             'click #btn-cancel': 'cancel:btn:clicked',
         },
